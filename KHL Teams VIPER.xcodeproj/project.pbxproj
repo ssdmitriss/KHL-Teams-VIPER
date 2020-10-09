@@ -1,0 +1,459 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A83F6ACC2525ECF700C112FF /* TeamDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83F6ACB2525ECF700C112FF /* TeamDetailsPresenter.swift */; };
+		A83F6AD02525ED1100C112FF /* TeamDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83F6ACF2525ED1100C112FF /* TeamDetailsInteractor.swift */; };
+		A83F6AD32525ED2500C112FF /* TeamDetailsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83F6AD22525ED2500C112FF /* TeamDetailsConfigurator.swift */; };
+		A83F6ADA252607FA00C112FF /* TeamListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83F6AD9252607FA00C112FF /* TeamListPresenter.swift */; };
+		A83F6ADD2526080F00C112FF /* TeamListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83F6ADC2526080F00C112FF /* TeamListInteractor.swift */; };
+		A83F6AE02526081D00C112FF /* TeamListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83F6ADF2526081D00C112FF /* TeamListRouter.swift */; };
+		A83F6AE32526083A00C112FF /* TeamListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83F6AE22526083A00C112FF /* TeamListConfigurator.swift */; };
+		A870A914251E0D810006056B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A870A913251E0D810006056B /* NetworkManager.swift */; };
+		A8B14E422518BF4D00073849 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B14E412518BF4D00073849 /* AppDelegate.swift */; };
+		A8B14E442518BF4D00073849 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B14E432518BF4D00073849 /* SceneDelegate.swift */; };
+		A8B14E462518BF4D00073849 /* TeamDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B14E452518BF4D00073849 /* TeamDetailsViewController.swift */; };
+		A8B14E492518BF4D00073849 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8B14E472518BF4D00073849 /* Main.storyboard */; };
+		A8B14E4B2518BF4D00073849 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8B14E4A2518BF4D00073849 /* Assets.xcassets */; };
+		A8B14E4E2518BF4D00073849 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8B14E4C2518BF4D00073849 /* LaunchScreen.storyboard */; };
+		A8B14E5B2518C17800073849 /* TeamListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B14E5A2518C17800073849 /* TeamListTableViewController.swift */; };
+		A8B14E5E2518CA5600073849 /* TeamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B14E5D2518CA5600073849 /* TeamTableViewCell.swift */; };
+		A8B14E602518E7CC00073849 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B14E5F2518E7CC00073849 /* Team.swift */; };
+		A8B14E632518E92800073849 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B14E622518E92800073849 /* ImageView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A83F6ACB2525ECF700C112FF /* TeamDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDetailsPresenter.swift; sourceTree = "<group>"; };
+		A83F6ACF2525ED1100C112FF /* TeamDetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDetailsInteractor.swift; sourceTree = "<group>"; };
+		A83F6AD22525ED2500C112FF /* TeamDetailsConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDetailsConfigurator.swift; sourceTree = "<group>"; };
+		A83F6AD9252607FA00C112FF /* TeamListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamListPresenter.swift; sourceTree = "<group>"; };
+		A83F6ADC2526080F00C112FF /* TeamListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamListInteractor.swift; sourceTree = "<group>"; };
+		A83F6ADF2526081D00C112FF /* TeamListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamListRouter.swift; sourceTree = "<group>"; };
+		A83F6AE22526083A00C112FF /* TeamListConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamListConfigurator.swift; sourceTree = "<group>"; };
+		A870A913251E0D810006056B /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		A8B14E3E2518BF4D00073849 /* KHL Teams VIPER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KHL Teams VIPER.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8B14E412518BF4D00073849 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A8B14E432518BF4D00073849 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A8B14E452518BF4D00073849 /* TeamDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDetailsViewController.swift; sourceTree = "<group>"; };
+		A8B14E482518BF4D00073849 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A8B14E4A2518BF4D00073849 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A8B14E4D2518BF4D00073849 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A8B14E4F2518BF4D00073849 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8B14E5A2518C17800073849 /* TeamListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamListTableViewController.swift; sourceTree = "<group>"; };
+		A8B14E5D2518CA5600073849 /* TeamTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamTableViewCell.swift; sourceTree = "<group>"; };
+		A8B14E5F2518E7CC00073849 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		A8B14E622518E92800073849 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A8B14E3B2518BF4D00073849 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A83F6ACA2525EC9200C112FF /* TeamDetails */ = {
+			isa = PBXGroup;
+			children = (
+				A8B14E452518BF4D00073849 /* TeamDetailsViewController.swift */,
+				A83F6ACB2525ECF700C112FF /* TeamDetailsPresenter.swift */,
+				A83F6ACF2525ED1100C112FF /* TeamDetailsInteractor.swift */,
+				A83F6AD22525ED2500C112FF /* TeamDetailsConfigurator.swift */,
+			);
+			path = TeamDetails;
+			sourceTree = "<group>";
+		};
+		A83F6AD62526075800C112FF /* TeamList */ = {
+			isa = PBXGroup;
+			children = (
+				A8B14E5A2518C17800073849 /* TeamListTableViewController.swift */,
+				A83F6AD9252607FA00C112FF /* TeamListPresenter.swift */,
+				A83F6ADC2526080F00C112FF /* TeamListInteractor.swift */,
+				A83F6ADF2526081D00C112FF /* TeamListRouter.swift */,
+				A83F6AE22526083A00C112FF /* TeamListConfigurator.swift */,
+			);
+			path = TeamList;
+			sourceTree = "<group>";
+		};
+		A8B14E352518BF4D00073849 = {
+			isa = PBXGroup;
+			children = (
+				A8B14E402518BF4D00073849 /* KHL Teams VIPER */,
+				A8B14E3F2518BF4D00073849 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A8B14E3F2518BF4D00073849 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A8B14E3E2518BF4D00073849 /* KHL Teams VIPER.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A8B14E402518BF4D00073849 /* KHL Teams VIPER */ = {
+			isa = PBXGroup;
+			children = (
+				A83F6AD62526075800C112FF /* TeamList */,
+				A83F6ACA2525EC9200C112FF /* TeamDetails */,
+				A8B14E5C2518CA2E00073849 /* Cell */,
+				A8B14E592518BFE400073849 /* Model */,
+				A8B14E612518E8D900073849 /* Manager */,
+				A8B14E562518BF6700073849 /* Storyboard */,
+				A8B14E552518BF5800073849 /* Resourses */,
+				A8B14E572518BF7A00073849 /* Supporting Files */,
+			);
+			path = "KHL Teams VIPER";
+			sourceTree = "<group>";
+		};
+		A8B14E552518BF5800073849 /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				A8B14E4A2518BF4D00073849 /* Assets.xcassets */,
+				A8B14E4F2518BF4D00073849 /* Info.plist */,
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		A8B14E562518BF6700073849 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				A8B14E472518BF4D00073849 /* Main.storyboard */,
+				A8B14E4C2518BF4D00073849 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		A8B14E572518BF7A00073849 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A8B14E412518BF4D00073849 /* AppDelegate.swift */,
+				A8B14E432518BF4D00073849 /* SceneDelegate.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A8B14E592518BFE400073849 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A8B14E5F2518E7CC00073849 /* Team.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A8B14E5C2518CA2E00073849 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A8B14E5D2518CA5600073849 /* TeamTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		A8B14E612518E8D900073849 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				A8B14E622518E92800073849 /* ImageView.swift */,
+				A870A913251E0D810006056B /* NetworkManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A8B14E3D2518BF4D00073849 /* KHL Teams VIPER */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8B14E522518BF4D00073849 /* Build configuration list for PBXNativeTarget "KHL Teams VIPER" */;
+			buildPhases = (
+				A8B14E3A2518BF4D00073849 /* Sources */,
+				A8B14E3B2518BF4D00073849 /* Frameworks */,
+				A8B14E3C2518BF4D00073849 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "KHL Teams VIPER";
+			productName = "KHL Teams";
+			productReference = A8B14E3E2518BF4D00073849 /* KHL Teams VIPER.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A8B14E362518BF4D00073849 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1170;
+				LastUpgradeCheck = 1200;
+				ORGANIZATIONNAME = "Дмитрий Селезнев";
+				TargetAttributes = {
+					A8B14E3D2518BF4D00073849 = {
+						CreatedOnToolsVersion = 11.7;
+					};
+				};
+			};
+			buildConfigurationList = A8B14E392518BF4D00073849 /* Build configuration list for PBXProject "KHL Teams VIPER" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A8B14E352518BF4D00073849;
+			productRefGroup = A8B14E3F2518BF4D00073849 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A8B14E3D2518BF4D00073849 /* KHL Teams VIPER */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A8B14E3C2518BF4D00073849 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8B14E4E2518BF4D00073849 /* LaunchScreen.storyboard in Resources */,
+				A8B14E4B2518BF4D00073849 /* Assets.xcassets in Resources */,
+				A8B14E492518BF4D00073849 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A8B14E3A2518BF4D00073849 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8B14E602518E7CC00073849 /* Team.swift in Sources */,
+				A83F6ADA252607FA00C112FF /* TeamListPresenter.swift in Sources */,
+				A83F6ACC2525ECF700C112FF /* TeamDetailsPresenter.swift in Sources */,
+				A83F6AE32526083A00C112FF /* TeamListConfigurator.swift in Sources */,
+				A83F6AE02526081D00C112FF /* TeamListRouter.swift in Sources */,
+				A8B14E5B2518C17800073849 /* TeamListTableViewController.swift in Sources */,
+				A8B14E5E2518CA5600073849 /* TeamTableViewCell.swift in Sources */,
+				A83F6AD02525ED1100C112FF /* TeamDetailsInteractor.swift in Sources */,
+				A83F6ADD2526080F00C112FF /* TeamListInteractor.swift in Sources */,
+				A83F6AD32525ED2500C112FF /* TeamDetailsConfigurator.swift in Sources */,
+				A8B14E462518BF4D00073849 /* TeamDetailsViewController.swift in Sources */,
+				A870A914251E0D810006056B /* NetworkManager.swift in Sources */,
+				A8B14E632518E92800073849 /* ImageView.swift in Sources */,
+				A8B14E422518BF4D00073849 /* AppDelegate.swift in Sources */,
+				A8B14E442518BF4D00073849 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A8B14E472518BF4D00073849 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A8B14E482518BF4D00073849 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A8B14E4C2518BF4D00073849 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A8B14E4D2518BF4D00073849 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A8B14E502518BF4D00073849 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A8B14E512518BF4D00073849 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A8B14E532518BF4D00073849 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 45P3UV6V2Q;
+				INFOPLIST_FILE = "$(SRCROOT)/KHL Teams VIPER/Resourses/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-.KHL-Teams";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A8B14E542518BF4D00073849 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 45P3UV6V2Q;
+				INFOPLIST_FILE = "$(SRCROOT)/KHL Teams VIPER/Resourses/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-.KHL-Teams";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A8B14E392518BF4D00073849 /* Build configuration list for PBXProject "KHL Teams VIPER" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8B14E502518BF4D00073849 /* Debug */,
+				A8B14E512518BF4D00073849 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8B14E522518BF4D00073849 /* Build configuration list for PBXNativeTarget "KHL Teams VIPER" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8B14E532518BF4D00073849 /* Debug */,
+				A8B14E542518BF4D00073849 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A8B14E362518BF4D00073849 /* Project object */;
+}

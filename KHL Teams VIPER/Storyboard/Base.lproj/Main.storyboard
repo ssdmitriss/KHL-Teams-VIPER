@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="I8P-Ho-WLs">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Команды КХЛ-->
+        <scene sceneID="dzA-Z3-3B7">
+            <objects>
+                <tableViewController id="vJ5-oY-IFd" customClass="TeamListTableViewController" customModule="KHL_Teams_VIPER" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="GhV-5I-Pp3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="teamCell" rowHeight="130" id="OWe-Tt-hyr" customClass="TeamTableViewCell" customModule="KHL_Teams_VIPER" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="130"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OWe-Tt-hyr" id="HPl-GP-JIj">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="130"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HD6-Hi-qWS" customClass="ImageView" customModule="KHL_Teams_VIPER" customModuleProvider="target">
+                                            <rect key="frame" x="16" y="16" width="98" height="98"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="98" id="vGF-WN-Y60"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7oF-TJ-aXm">
+                                            <rect key="frame" x="130" y="11" width="229" height="24"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pnt-cX-hl6">
+                                            <rect key="frame" x="130" y="51" width="229" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Division" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uFF-wg-kmy">
+                                            <rect key="frame" x="130" y="80" width="229" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="HD6-Hi-qWS" secondAttribute="bottom" constant="16" id="2Uc-G7-n3D"/>
+                                        <constraint firstItem="uFF-wg-kmy" firstAttribute="top" secondItem="pnt-cX-hl6" secondAttribute="bottom" constant="8" id="A1t-k2-Tss"/>
+                                        <constraint firstAttribute="trailing" secondItem="pnt-cX-hl6" secondAttribute="trailing" constant="16" id="H8c-C8-sm9"/>
+                                        <constraint firstItem="pnt-cX-hl6" firstAttribute="leading" secondItem="HD6-Hi-qWS" secondAttribute="trailing" constant="16" id="JCD-gI-Sxe"/>
+                                        <constraint firstItem="uFF-wg-kmy" firstAttribute="leading" secondItem="HD6-Hi-qWS" secondAttribute="trailing" constant="16" id="Or3-9N-Ndw"/>
+                                        <constraint firstItem="HD6-Hi-qWS" firstAttribute="top" secondItem="HPl-GP-JIj" secondAttribute="top" constant="16" id="aSQ-OO-H6Z"/>
+                                        <constraint firstItem="7oF-TJ-aXm" firstAttribute="top" secondItem="HPl-GP-JIj" secondAttribute="topMargin" id="dNj-i6-oHL"/>
+                                        <constraint firstAttribute="trailing" secondItem="7oF-TJ-aXm" secondAttribute="trailing" constant="16" id="eW5-Sd-Bkm"/>
+                                        <constraint firstAttribute="trailing" secondItem="uFF-wg-kmy" secondAttribute="trailing" constant="16" id="gMe-jZ-TPv"/>
+                                        <constraint firstItem="7oF-TJ-aXm" firstAttribute="leading" secondItem="HD6-Hi-qWS" secondAttribute="trailing" constant="16" id="iSs-xa-aiM"/>
+                                        <constraint firstItem="HD6-Hi-qWS" firstAttribute="leading" secondItem="HPl-GP-JIj" secondAttribute="leading" constant="16" id="mug-t8-ddN"/>
+                                        <constraint firstItem="pnt-cX-hl6" firstAttribute="top" secondItem="7oF-TJ-aXm" secondAttribute="bottom" constant="16" id="q5f-4q-Izu"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="cityTeam" destination="pnt-cX-hl6" id="cpL-Lz-bib"/>
+                                    <outlet property="divisionTeam" destination="uFF-wg-kmy" id="g7l-hv-cV7"/>
+                                    <outlet property="nameTeam" destination="7oF-TJ-aXm" id="2VQ-Ng-YSP"/>
+                                    <outlet property="teamLogo" destination="HD6-Hi-qWS" id="SPU-yl-wYc"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="vJ5-oY-IFd" id="Rnf-3c-2M0"/>
+                            <outlet property="delegate" destination="vJ5-oY-IFd" id="An6-HS-NsB"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Команды КХЛ" id="msW-L5-OLW"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="showDetail" id="cdm-dV-Dkr"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fhs-c0-Apw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-400.80000000000001" y="129.98500749625188"/>
+        </scene>
+        <!--Team Details View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="TeamDetailsViewController" customModule="KHL_Teams_VIPER" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aiU-vD-yAA" customClass="ImageView" customModule="KHL_Teams_VIPER" customModuleProvider="target">
+                                <rect key="frame" x="87.5" y="108" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="aiU-vD-yAA" secondAttribute="height" multiplier="1:1" id="v8G-Rm-WlX"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VxS-j9-sjs">
+                                <rect key="frame" x="20" y="64" width="335" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="city" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pe0-bP-Qib">
+                                <rect key="frame" x="20" y="328" width="335" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="conference" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q3n-iD-H7e">
+                                <rect key="frame" x="20" y="369" width="335" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VxS-j9-sjs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="21B-Vq-qqS"/>
+                            <constraint firstItem="aiU-vD-yAA" firstAttribute="top" secondItem="VxS-j9-sjs" secondAttribute="bottom" constant="20" id="OSB-tZ-9XK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VxS-j9-sjs" secondAttribute="trailing" constant="20" id="R1w-Uq-0Ua"/>
+                            <constraint firstItem="VxS-j9-sjs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ViO-vL-kO4"/>
+                            <constraint firstItem="aiU-vD-yAA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VtG-H6-mzZ"/>
+                            <constraint firstItem="q3n-iD-H7e" firstAttribute="top" secondItem="Pe0-bP-Qib" secondAttribute="bottom" constant="20" id="XJV-cW-bIi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="q3n-iD-H7e" secondAttribute="trailing" constant="20" id="XW4-it-kFL"/>
+                            <constraint firstItem="q3n-iD-H7e" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Zms-sW-ijO"/>
+                            <constraint firstItem="aiU-vD-yAA" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="200:667" id="cod-e6-mQj"/>
+                            <constraint firstItem="Pe0-bP-Qib" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="g1R-Is-EYV"/>
+                            <constraint firstItem="Pe0-bP-Qib" firstAttribute="top" secondItem="aiU-vD-yAA" secondAttribute="bottom" constant="20" id="kJH-W3-Kp4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Pe0-bP-Qib" secondAttribute="trailing" constant="20" id="rDo-vJ-XGC"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="BDx-Mx-FMu"/>
+                    <connections>
+                        <outlet property="city" destination="Pe0-bP-Qib" id="C5c-pd-Ycm"/>
+                        <outlet property="conference" destination="q3n-iD-H7e" id="aWL-Sb-pvi"/>
+                        <outlet property="logoTeam" destination="aiU-vD-yAA" id="NrL-Pk-BpH"/>
+                        <outlet property="nameTeam" destination="VxS-j9-sjs" id="cbi-yd-pel"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="416.80000000000001" y="141.67916041979012"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="urC-pM-kJR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="I8P-Ho-WLs" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="Y4M-DZ-ENI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="VHF-RM-Gb2">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="vJ5-oY-IFd" kind="relationship" relationship="rootViewController" id="tFk-70-tT5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2q7-ns-FYq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1340" y="129.98500749625188"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
